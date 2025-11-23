@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Truth Drift Map — System Edition</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header class="page-header">
+    <div class="page-header-inner">
+      <h1>Truth Drift Map — System Edition</h1>
+      <p class="tagline">
+        Visualize how shared concepts drift in meaning and schema across services and time.
+      </p>
+    </div>
+  </header>
+
+  <main class="main">
+    <!-- LEFT PANEL: CONTROLS + SUMMARY -->
+    <section class="panel panel-controls">
+      <div class="panel-header">
+        <h2>Concept &amp; Drift Summary</h2>
+      </div>
+
+      <div class="field">
+        <label for="concept-select">Concept</label>
+        <select id="concept-select" class="select">
+          <!-- Options are injected by app.js -->
+        </select>
+      </div>
+
+      <p id="concept-description" class="concept-description">
+        Select a concept to see how its meaning and schema evolve across services.
+      </p>
+
+      <div id="summary" class="summary">
+        <div class="summary-badge summary-badge-idle">
+          No concept selected yet.
+        </div>
+      </div>
+
+      <div class="legend">
+        <h3>Drift Legend</h3>
+        <ul>
+          <li>
+            <span class="legend-dot legend-low"></span>
+            Low drift – semantics mostly aligned
+          </li>
+          <li>
+            <span class="legend-dot legend-medium"></span>
+            Medium drift – noticeable differences in rules or schema
+          </li>
+          <li>
+            <span class="legend-dot legend-high"></span>
+            High drift – meaning has significantly diverged
+          </li>
+        </ul>
+      </div>
+
+      <div class="notes-card">
+        <h3>How to Read This Map</h3>
+        <p>
+          Each row is a service. Each node is a version in time. Colors show how far that
+          service’s interpretation has drifted from the original concept.
+        </p>
+        <p>
+          Click a node to see its local meaning, schema changes, and invariants.
+        </p>
+      </div>
+    </section>
+
+    <!-- RIGHT PANEL: MAP + DETAILS -->
+    <section class="panel panel-map">
+      <div class="panel-header">
+        <h2>Drift Map</h2>
+      </div>
+
+      <div id="map-container" class="map-container">
+        <p class="map-empty">
+          Select a concept on the left to render the drift map.
+        </p>
+      </div>
+
+      <div id="details-card" class="details-card">
+        <h3>Drift Details</h3>
+        <p class="details-empty">
+          Click any node in the map to see how that service version interprets the concept.
+        </p>
+      </div>
+    </section>
+  </main>
+
+  <footer class="page-footer">
+    <p>
+      Part of the
+      <a href="https://github.com/rtfenter/Systems-of-Trust-Series" target="_blank" rel="noreferrer">
+        Systems of Trust Series
+      </a>.
+    </p>
+  </footer>
+
+  <script src="app.js"></script>
+</body>
+</html>
