@@ -144,7 +144,7 @@ The prototype of this map will focus on core mechanics needed to demonstrate tru
 
 ## Local Use
 
-Everything will run client-side.
+Everything runs client-side.
 
 To run locally (once the prototype is implemented):
 
