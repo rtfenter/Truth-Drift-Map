@@ -34,7 +34,7 @@ This map visualizes how those drifts emerge across services and time.
 
 ## Features (MVP)
 
-The first version will include:
+The prototype will include:
 
 - **Semantic Drift Timeline** – see how a field’s meaning changes across versions and services  
 - **Schema Divergence Map** – track added, removed, or repurposed fields over time  
@@ -138,7 +138,7 @@ https://github.com/rtfenter/Systems-of-Trust-Series
 ## Status
 
 MVP implemented and active.  
-The first version of this map will focus on core mechanics needed to demonstrate truth drift at the schema/meaning layer, not a full production metadata catalog.
+The prototype of this map will focus on core mechanics needed to demonstrate truth drift at the schema/meaning layer, not a full production metadata catalog.
 
 ---
 
