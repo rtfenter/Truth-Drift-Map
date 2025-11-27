@@ -50,12 +50,11 @@ This tool is intentionally minimal and aimed at conceptual clarity, not a full m
 ## Demo Screenshot
 <img width="2696" height="1556" alt="Screenshot 2025-11-23 at 09-25-23 Truth Drift Map — System Edition" src="https://github.com/user-attachments/assets/6b928ccc-6164-43f5-9147-7eba3c405d30" />
 
-
-
 ---
 
-## Truth Drift Flow Diagram
+## Drift Flow Diagram
 
+```
     [Source of Truth]
     (canonical event + meaning)
               |
@@ -80,6 +79,7 @@ This tool is intentionally minimal and aimed at conceptual clarity, not a full m
     Downstream Consumers
     (analytics, ML, dashboards,
      incident review, audits)
+```
 
 ---
 
@@ -141,7 +141,6 @@ MVP implemented and active.
 The prototype of this map will focus on core mechanics needed to demonstrate truth drift at the schema/meaning layer, not a full production metadata catalog.
 
 ---
-
 ## Local Use
 
 Everything runs client-side.
