@@ -34,7 +34,7 @@ This map visualizes how those drifts emerge across services and time.
 
 ## Features (MVP)
 
-The prototype will include:
+The prototype includes:
 
 - **Semantic Drift Timeline** – see how a field’s meaning changes across versions and services  
 - **Schema Divergence Map** – track added, removed, or repurposed fields over time  
